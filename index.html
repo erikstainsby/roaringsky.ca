@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Color Chooser</title>
+	
+	<script src="js/jquery.min.js" charset="utf-8"></script>
+
+	<script src="js/jssha256.js" charset="utf-8"></script>
+	<script src="js/jquery.qrcode.min.js" charset="utf-8"></script>
+	<script src="js/raphael-min.js" charset="utf-8"></script>
+	
+	<script src="hash-and-encode.js" charset="utf-8"></script>
+	
+	<script src="colorchooser.js" charset="utf-8"></script>
+	
+	<link rel="stylesheet" href="colorchooser.less" title="colorchooser" type="text/css" media="screen" charset="utf-8">
+		
+</head>
+<body>
+
+	<div id="content">
+
+	<fieldset class="formfields">
+	<legend>Stuff to be encoded</legend>
+	
+	<label>First name</label><br/>
+	<input type="text" id="first" name="first" /><br/>
+	<label>Last name</label><br/>
+	<input type="text" id="last" name="last" /><br/>
+	<label>Job title</label><br/>
+	<input type="text" id="title" name="title" /><br/>
+	<label>Email address</label><br/>
+	<input type="text" id="email" name="email" /><br/>
+	<label>Web address</label><br/>
+	<input type="text" id="web" name="web" /><br/>
+	<label>Phone number</label><br/>
+	<input type="text" id="phone" name="phone" /><br/>
+	<label>Street address</label><br/>
+	<input type="text" id="street" name="street" /><br/>
+	<label>Address 2</label><br/>
+	<input type="text" id="street2" name="street2" /><br/>
+	<label>City</label><br/>
+	<input type="text" id="city" name="city" /><br/>
+	<label>Postal code</label><br/>
+	<input type="text" id="pcode" name="pcode" /><br/>
+	
+	<label>Secret</label><br/>
+	<input type="password" id="secret" name="secret" /><br/>
+	
+	<button id="qrdo">QR me</button><br/>
+	<button id="shado">Hex me</button><br/>
+	<button id="color64do">64 Colors</button><br/>
+	<button id="shacolorsdo">SHA digest</button>
+
+	</fieldset>
+	
+	<div id="qroutput"></div>
+	<div id="shaoutput"></div>
+	<div id="colorbox"></div>
+	<div id="shaColors"></div>
+	<pre id="shaGrid"></pre>	
+	</div><!-- #content -->
+
+	<div id="paper"></div>
+</body>
+</html>
